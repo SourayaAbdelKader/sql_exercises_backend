@@ -1,4 +1,5 @@
-/* Find the number of majors in each department*/ 
+/* Find all courses taken by BIF majors*/ 
 
-select count(distinct(name)) 
-from departments;
+select *
+from courses
+where crn like "BIF%";
