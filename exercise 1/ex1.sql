@@ -2,5 +2,6 @@
 result should have the form (name, earnings_rank). Assume no two movies
 have the same earnings rank. */
 
-select name, min(earnings_rank)
-from movies;
+select name, earnings_rank
+from movies
+having earnings_rank = min(earnings_rank);
